@@ -12,6 +12,8 @@ spring:
       enabled: true
       max-request-size: 50MB
       max-file-size: 50MB
+  session:
+    store-type: none
   profiles:
     active: @profileActive@
   application:
@@ -34,7 +36,7 @@ info:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://root:root@paascloud-eureka:eureka:8761/eureka/
+      defaultZone: http://root:root@paascloud-eureka:8761/eureka/
     instance:
       instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
 zuul:

@@ -6,7 +6,7 @@ spring:
   profiles:
     active: @profileActive@
   mail:
-    host: smtp.sina.com
+    host: smtp.21cn.com
     username: ${paascloud.mail.username}
     password: ${paascloud.mail.password}
     port: 465
