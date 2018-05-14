@@ -149,3 +149,30 @@ Spring Cloud 爱好者,现就任于鲜易供应链平台研发部.
 
 ![项目架构图](http://img.paascloud.net/paascloud/doc/paascloud-project.png)
 
+```
+127.0.0.1 localhost
+127.0.0.1 dev-login.paascloud.net
+127.0.0.1 dev-admin.paascloud.net
+127.0.0.1 dev-api.paascloud.net
+127.0.0.1 dev-mall.paascloud.net
+127.0.0.1 paascloud-discovery
+127.0.0.1 paascloud-eureka
+127.0.0.1 paascloud-gateway
+127.0.0.1 paascloud-monitor
+127.0.0.1 paascloud-zipkin
+127.0.0.1 paascloud-provider-uac
+127.0.0.1 paascloud-provider-mdc
+127.0.0.1 paascloud-provider-omc
+127.0.0.1 paascloud-provider-opc
+127.0.0.1 paascloud-provider-tpc
+
+119.29.171.50 paascloud-db-redis
+119.29.171.50 paascloud-mq-rabbit
+193.112.205.182 paascloud-mq-rocket
+
+193.112.205.182  paascloud-zk-01
+193.112.205.27   paascloud-zk-02
+193.112.200.104  paascloud-zk-03
+
+118.126.89.139 paascloud-db-mysql
+```

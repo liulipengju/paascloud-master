@@ -28,7 +28,7 @@ spring:
         allow:
   rabbitmq:
     host: paascloud-mq-rabbit
-    port: 15672
+    port: 5672
     username: admin
     password: 123456
   sleuth:
@@ -40,7 +40,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://root:root@paascloud-eureka:8761/eureka/
+      defaultZone: http://root:root@paascloud-eureka:eureka:8761/eureka/
     instance:
       instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
 zipkin:
