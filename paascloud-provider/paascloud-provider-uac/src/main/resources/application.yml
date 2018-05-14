@@ -14,13 +14,16 @@ spring:
       username: ${security.user.name:admin}
       password: ${security.user.password:admin}
   redis:
+    cluster:
+      max-redirects: ${spring.redis.cluster.max-redirects}
+      nodes: ${spring.redis.cluster.nodes}
     host: ${spring.redis.host:paascloud-db-redis}
-    password: ${spring.redis.password:pouing@redis}
+    password: ${spring.redis.password:123456}
     port: ${spring.redis.port:6379}
     timeout: ${spring.redis.timeout:0}
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://paascloud-db-mysql:3306/paascloud_uac?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://paascloud-db-mysql:3307/pouing_uac?characterEncoding=utf8&useSSL=false
     username: ${spring.datasource.username:root}
     password: ${spring.datasource.password:123456}
     filters: stat,wall
@@ -74,7 +77,7 @@ paascloud:
     interceptor:
       enable: true
   zk:
-    zkAddressList: paascloud-provider-zk:2181
+    zkAddressList: paascloud-zk-01:2181,paascloud-zk-02:2182,paascloud-zk-03:2183
   swagger:
     title: @pom.artifactId@
     description: @pom.description@

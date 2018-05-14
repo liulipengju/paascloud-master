@@ -50,7 +50,7 @@
     <paascloud.version>1.0</paascloud.version>
     <elastic-job.version>2.1.5</elastic-job.version>
     <curator.version>2.10.0</curator.version>
-    <mysql.version>5.1.39</mysql.version>
+    <mysql.version>8.0.11</mysql.version>
     <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
     <maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
     <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
@@ -67,28 +67,28 @@
 
   <repositories>
     <repository>
-      <id>xiduo-public</id>
-      <url>http://47.106.147.249:8081/repository/xiduo-public/</url>
+      <id>pouing-group</id>
+      <url>http://193.112.187.136:8081/repository/pouing-group/</url>
     </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
-      <id>xiduo-public</id>
-      <url>http://47.106.147.249:8081/repository/xiduo-public/</url>
+      <id>pouing-group</id>
+      <url>http://193.112.187.136:8081/repository/pouing-group/</url>
     </pluginRepository>
   </pluginRepositories>
 
   <distributionManagement>
     <!-- 两个ID必须与 setting.xml中的<server><id>nexus-releases</id></server>保持一致-->
     <repository>
-      <id>xiduo-releases</id>
+      <id>pouing-releases</id>
       <name>Nexus Release Repository</name>
-      <url>http://47.106.147.249:8081/repository/xiduo-releases/</url>
+      <url>http://193.112.187.136:8081/repository/pouing-releases/</url>
     </repository>
     <snapshotRepository>
-      <id>xiduo-snapshots</id>
+      <id>pouing-snapshots</id>
       <name>Nexus Snapshot Repository</name>
-      <url>http://47.106.147.249:8081/repository/xiduo-snapshots/</url>
+      <url>http://193.112.187.136:8081/repository/pouing-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 
